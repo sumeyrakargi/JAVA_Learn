@@ -30,5 +30,25 @@ public class Task14 {
     */
 
 
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Saatlik çalışma ücretinizi giriniz :");
+        double ücret=sc.nextDouble();
+        System.out.print("Mesaiye başmala saatinizi giriniz :");
+        double  baş=sc.nextDouble();
+        System.out.print("Mesaiyi bitirme saatinizi giriniz :");
+        double son =sc.nextDouble();
+        System.out.print("Fazla mesai ücretini mesai ücretine oranını giriniz :");
+        double kat=sc.nextDouble();
+        double toplamkazanç=kazanç(baş,son,ücret,kat);
+        System.out.println("Toplam kazancınız ="+toplamkazanç);
     }
+    public  static double kazanç(double baş,double son, double ücret,double kat){
+
+        double kazanç=((son-baş-8)*kat*ücret)+(8*ücret);
+        return kazanç;
+
+
+
+    }
+
 }

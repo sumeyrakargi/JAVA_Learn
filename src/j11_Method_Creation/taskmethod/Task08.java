@@ -21,18 +21,13 @@ public class Task08 {
         System.out.print("Yıl giriniz :");
         int a=sc.nextInt();
         System.out.println(artıkyıl(a));
-
     }
-
     public static boolean artıkyıl(int a){
 
         boolean artıkyılmı;
     if ((a%4==0)      &&  (a %100!=0)  ||   (a%400==0) ){
         artıkyılmı=true;
-    }else {
-        artıkyılmı=false;
-    }
-return artıkyılmı;
-
+    }else {   artıkyılmı=false;  }
+          return artıkyılmı;
     }
 }

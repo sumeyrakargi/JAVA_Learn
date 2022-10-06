@@ -14,19 +14,15 @@ public class Task09 {
     Beklenen çıktı:
      7200
     */
-
         Scanner sc=new Scanner(System.in);
         System.out.print("saat giriniz :");
         int a=sc.nextInt();
 
         System.out.println(çevir(a));
-
     }
-
     public static int çevir(int a){
 
        return (a*3600);
-
     }
 
 

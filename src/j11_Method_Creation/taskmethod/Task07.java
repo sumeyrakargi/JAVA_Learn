@@ -15,7 +15,6 @@ public class Task07 {
     Beklenen Çıktı:
     12
     */
-
         Scanner sc=new Scanner(System.in);
         System.out.print("Birinci sayıyı seçiniz:");
         int a=sc.nextInt();
@@ -24,11 +23,7 @@ public class Task07 {
         System.out.print("Üçüncü sayıyı seçiniz:");
         int c=sc.nextInt();
        küçük(a,b,c);
-
-
-
     }
-
     public static void küçük(int a,int b,int c){
         if (a<b&&a<c) {
             System.out.println("En küçük olan sayı :" + a);
@@ -37,8 +32,6 @@ public class Task07 {
         } else if (c<a&&c<b){ System.out.println("En küçük olan sayı :" + c);
 
         }else System.out.println("Yanlış giriş yaptınız.");
-
-
     }
 
     }

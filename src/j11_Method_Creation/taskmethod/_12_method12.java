@@ -39,8 +39,6 @@ public class _12_method12 {
         int sayı=sc.nextInt();
 
 
-
-
     }}
 
 

@@ -30,18 +30,15 @@ public class Task12 {
         String email=sc.nextLine();
 
 
-        System.out.println(kontrol(email));
-    }
+        System.out.println(kontrol(email));}
 
     public static boolean kontrol(String email){
         boolean geçerlimi ;
 
        if ((email.contains("@"))  && (email.contains("."))  &&  (email.indexOf("@")>0)) {
            geçerlimi=true;
-
-        }else {
-            geçerlimi=true;
-        }
+       }else {
+            geçerlimi=true;}
         return geçerlimi;
     }
 

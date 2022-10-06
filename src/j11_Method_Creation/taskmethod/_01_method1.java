@@ -14,13 +14,14 @@ public class _01_method1 {
 
     public static void main(String[] args) {
 
-Scanner sc=new Scanner(System.in);
+    Scanner sc=new Scanner(System.in);
         System.out.println("lütfen bi sayı giriniz");
-
-
-
-
-
+        int max= sc.nextInt();
+        System.out.println(randomNum(max));
+    }
+    public static double randomNum(int max){
+        double maxs = Math.random() * max;
+        return maxs;
     }
 
 }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task11 {
 
-    public static void main(String[] args) {
+
 
     /*
     Kullanıcının yazdığı metni, 'hacker'ların konuşma diline çevirip return eden bir method(method ismi hackerDili) yazınız.
@@ -18,18 +18,18 @@ public class Task11 {
 
     Test data
     hackerDili("javayı severim")
-    j4v4yı 53v3r1m
+    j4v4yı 53v3r1m*/
 
-    İpucu harfleri değiştirin ve ekrana yazdırın.
-    */
 
+     // İpucu harfleri değiştirin ve ekrana yazdırın.
+
+    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.print("iletmek istediğiniz cümleyi giriniz :");
         String cümle=sc.nextLine();
 
        şifrele(cümle);
     }
-
     public static void şifrele(String cümle ){
 
         //System.out.println(cümle.replace('s', (char) 5).replace('a', (char) 4).

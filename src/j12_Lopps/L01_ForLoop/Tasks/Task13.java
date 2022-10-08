@@ -8,11 +8,8 @@ public class Task13 {
             for (int j=0;j<=i;j++){
 
                 System.out.print((char) (harf+i)+" ");
-
             }
             System.out.println();
-
-
         }
 
     }

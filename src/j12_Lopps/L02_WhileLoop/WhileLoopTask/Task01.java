@@ -18,5 +18,7 @@ public class Task01 {
         }
         System.out.println(sayıadedi+" adet sayı girilmiştir"+"\nBu sayıların toplamı :"+toplam);
 
+
+
     }
 }

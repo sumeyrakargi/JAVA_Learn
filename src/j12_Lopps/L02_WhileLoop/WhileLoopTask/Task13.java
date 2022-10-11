@@ -13,7 +13,7 @@ public class Task13 {
         do {
             System.out.print("lütfen bir karakter giriniz: ");
             k = scan.next().toLowerCase().charAt(0);
-            System.out.println("javaCAN");
+            if (k!='x') System.out.println("javaCAN");
         } while (k != 'x');
         System.out.println("jAVATAR");
 

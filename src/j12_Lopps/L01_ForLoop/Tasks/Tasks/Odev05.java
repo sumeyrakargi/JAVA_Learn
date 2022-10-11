@@ -43,7 +43,7 @@ public class Odev05 {
     private static boolean üçünkuvveti(int sayi) {
 
         boolean kuvvetimi=true;
-        for (int i=3; i<=sayi;i*=3) {
+        for (int i=3; i<=sayi;i*=3) {//6 ve 18 için çözüm üretin
             if (sayi%i !=0) kuvvetimi = false;
         }
         return kuvvetimi;

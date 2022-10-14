@@ -10,9 +10,4 @@ public class Task13 {
                 System.out.print((char) (harf+i)+" ");
             }
             System.out.println();
-        }
-
-    }
-
-
-}
+        }}}

@@ -9,22 +9,23 @@ public class Cdeneme {
         // *******
         //*********
         int  i,k;
-        for (i = 1; i < 9; i++) {
+        for (i = 0; i <6; i++) {
 
-            for (int j = i; j < 8; j++)
-
+            for (int j = i; j <6; j++)
                 System.out.print(" ");
 
-                for (k = 1; k < i*2; k++)
+                for (k = 1; k < i+1; k++)
                     System.out.print("*");
                     System.out.println();
-
-
-
-                    }
-
         }
 
+        }}
+/*
+ for (int satir = 1; satir <=5 ; satir++) {
+            for (int sutun = 1; sutun <=satir ; sutun++) {
+                System.out.print("*");
+            }
+            System.out.println();
 
-    }
+ */
 

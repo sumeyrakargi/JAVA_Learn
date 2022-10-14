@@ -24,7 +24,8 @@ public class _06_Array_contains {
         //İkinciyöntem
 
         for (int i = 0; i < frt.length; i++) {
-            if (frt[i].equals("Apple")) System.out.println(true);//true
+            if (frt[i].equals("Apple")){ System.out.println(true);
+            }else System.out.println(false);;//true
         }
     }
 }

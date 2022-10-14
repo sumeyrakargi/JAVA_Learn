@@ -22,16 +22,34 @@ public class Salyangoz {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter a number : ");
-        int boyut = sc.nextInt();
-        int slyngz [][]=new int[sc.nextInt()][sc.nextInt()];
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter a number: ");
+        int boyut= scan.nextInt();
+        int max= boyut;
+        int slyngz[][]= new int[boyut][boyut];
 
-        for (int i = 1; i <=boyut ; i++) {
-            for (int j = 1; j <=boyut ; j++) {
-                System.out.println(slyngz[1][j]);
+        int satır=0;
+        int sütun=-1;
+        int value=1;
+        int geçiş=1;
 
-                slyngz[i][j]=boyut-j+1;
+        for(int i=0; i<boyut; i++) {
+            for(int j=0; j<max; j++) {
+                sütun+= geçiş;
+                slyngz[satır][sütun]= value++;
+            }
+            max--;
+            for(int j=0; j<max; j++) {
+                satır+= geçiş;
+                slyngz[satır][sütun]= value++;
+            }
+            geçiş*=-1;
+        }
+        for (int i=0; i<boyut; i++) {
+            for (int j=0; j<boyut; j++) {
+                System.out.print(slyngz[i][j]+"\t");
+            }
+            System.out.println();
+        }
 
-
-            }}}}
+       }}

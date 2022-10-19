@@ -22,5 +22,11 @@ public class C12_remove {
         System.out.println(listşehir.remove("Münih"));//true-->ilk sıradakini siler
         System.out.println(listşehir);//[losAngles, Bursa, samsun, istanbul, Londra, Munih]
 
+        ArrayList<String> listülke=new ArrayList<>(List.of("Amerika","Almanya","Turkiye"));
+        listşehir.addAll(listülke);// arraylist a array list eklenirken addAll
+        System.out.println(listşehir);//[losAngles, Bursa, samsun, istanbul, Londra, Munih, Amerika, Almanya, Turkiye]
+        listşehir.removeAll(listülke);// arraylistten bir array list remove edilirken removeAll
+        System.out.println(listşehir);//[losAngles, Bursa, samsun, istanbul, Londra, Munih]
+
     }
 }

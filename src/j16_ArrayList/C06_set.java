@@ -12,6 +12,7 @@ public class C06_set {
         System.out.println("listsehir = " + listsehir);//[Münih, losAngles, Londra, Ankara]
 
         System.out.println(listsehir.set(11,"petagonya"));//olmayan index set edlirse Rte verir
+        //listsehir.set(1,"bursa",2,"izmir");--> list te çoklu set metodu çalışmaz.buz gibi interview sorusuu
 
     }
 }

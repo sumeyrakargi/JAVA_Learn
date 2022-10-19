@@ -79,5 +79,6 @@ public class C01_ArrayList {
         System.out.println("listsayı = " + listsayı);//[10,39,14,23,36,41,41]
 
 
+
     }
 }

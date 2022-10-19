@@ -21,6 +21,6 @@ public class Task02 {
         }
         System.out.println("Girilen sayıların toplamı "+toplam);
 
-
     }
-}
+    }
+

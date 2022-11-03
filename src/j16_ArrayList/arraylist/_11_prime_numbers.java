@@ -1,3 +1,7 @@
+package j16_ArrayList.arraylist;
+
+import java.util.Scanner;
+
 public class _11_prime_numbers {
 
     /*
@@ -15,13 +19,23 @@ public class _11_prime_numbers {
 
     public static void main(String[] args) {
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Bir pozitif tam sayı giriniz.");
+        int sayı = sc.nextInt();
+        int count = 0;
 
-        System.out.println(toplama(12.5,5));
-
-    }public static double toplama(double num1, double num2) {
-
-        return num1+num2;
-
+        for (int i = 2; i <= sayı; i++) {
+            int j;
+            for (j = 2; j < i; j++) {
+                if (i % j == 0)
+                    break;
+            }
+            if (i == j) {
+                System.out.print(i + " ");
+                count++;
+            }
+        }System.out.println("\ncount :"+count);
     }
 }
+
 

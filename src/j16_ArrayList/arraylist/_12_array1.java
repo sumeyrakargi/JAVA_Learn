@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class _12_array1 {
 
     /*
@@ -18,7 +22,25 @@ public class _12_array1 {
 
     public static void main(String[] args) {
 
-     int[] arr = {1,2,3,1};
+        int[] arr = {1, 2, 3,1};
 
+        System.out.println(duplicate(arr));
+
+    }
+    private static boolean duplicate(int[] arr) {
+
+        boolean flag = false;
+        int sayac;
+        for (int i : arr) {
+            sayac = 0;
+            for (int j : arr) {
+                if (j == i) {
+                    sayac++;
+                }
+                if (sayac > 1) {
+                    flag = true;
+                    break;
+
+                }}}return flag;
     }
 }

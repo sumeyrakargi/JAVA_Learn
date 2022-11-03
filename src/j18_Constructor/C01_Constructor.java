@@ -19,8 +19,7 @@ public class C01_Constructor {
         C01_Constructor  obj3         =new            C01_Constructor();
 
         obj.str="javacan";//str in. variable obj ile call edilerek obj javacan değer, atandı
-        obj2.str="javatar";//str in. variable obj2 ile call edilerek obj2 javatar değer, atandı
-        System.out.println(obj.selam);//"güzel insan"
+        obj2.str="javatar";//selam);//"güzel insan"
 
         System.out.println("obj.str = " + obj.str);//javacan
         System.out.println("obj2.str = " + obj2.str);//javatar

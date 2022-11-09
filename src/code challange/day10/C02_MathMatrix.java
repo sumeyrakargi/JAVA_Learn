@@ -33,7 +33,7 @@ Output:
         for (int i = 0; i < sayi; i++) { //outer for - satir
             for (int j = 0; j < sayi; j++) { //inner for - sutun
                 // System.out.print((int) (Math.random()*2) + " ");
-                System.out.print(random.nextInt(9) + " ");
+                System.out.print(random.nextInt(2) + " ");
             }
             System.out.println();
         }

@@ -3,7 +3,8 @@ package j16_ArrayList;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C12_remove {
+public class
+C12_remove {
     public static void main(String[] args) {
 
         //remove();--> listten istenen eleanı siler

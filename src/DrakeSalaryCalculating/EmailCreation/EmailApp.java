@@ -1,8 +1,9 @@
-package DrakeSalaryCalculating.emailcreation;
+package DrakeSalaryCalculating.EmailCreation;
 
 import java.util.Scanner;
 
 public class EmailApp {
+
 
     String passWord;
     String department;
@@ -19,7 +20,7 @@ public class EmailApp {
         this.lastName = lastName;
 
         this.department = setDepartment();
-        // System.out.println("Department: " + department);
+       // System.out.println("Department: " + department);
 
         this.passWord = setRandomPassWord(defaultPaaswordLenght);
         //System.out.println("Password: " + passWord);
@@ -29,12 +30,12 @@ public class EmailApp {
     }
 
 
-        /*
-        testautomation.
-        fullstackdeveloper.
-        salesforce.
-        hicbiri --> ekleme yapılmayacak.
-         */
+    /*
+    testautomation.
+    fullstackdeveloper.
+    salesforce.
+    hicbiri --> ekleme yapılmayacak.
+     */
 
     public String setDepartment() {
 
@@ -75,13 +76,10 @@ public class EmailApp {
     public String showInfo(){
 
         return "Ad-Soyad: " + firstName + " " + lastName + "\n"+
-                "Sirket Email: " + email + "\n" +
-                "Capasity: " + mailBoCapacity + "mb \n" +
-                "Password: " + passWord;
+        "Sirket Email: " + email + "\n" +
+        "Capasity: " + mailBoCapacity + "mb \n" +
+        "Password: " + passWord;
     }
 
 
-    }
-
-
-
+}

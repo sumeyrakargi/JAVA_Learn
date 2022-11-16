@@ -3,10 +3,11 @@ package DrakeSalaryCalculating.AutomationMac;
 import java.util.Scanner;
 
 public class Options {
-// ***
+
+    // ***
     /*
     Urun urun = new Urun();
-​
+
     1) Kullanıcı ürünleri göstermeliyiz. ----> Urun clasın da bir obj. toString()
     2) Scanner --> Scanner clasından bir obj create ediniz. [productNum a set edilmeli. setProductNum()]
     3) Loop --> Do-While Loop --> kullanıcı 0-7 rakamları arasında bir seçim yapmalı ve eğer girmiş olduğu rakam
@@ -98,4 +99,6 @@ price;
 
         }
         return accountBalance; //Hata vermemesi için şu anlık yazılmıuş bir veridir....
-}}
+    }
+
+}

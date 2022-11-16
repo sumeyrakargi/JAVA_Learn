@@ -1,12 +1,13 @@
 package DrakeSalaryCalculating.AutomationMac;
 
 public class Main {
+
     public static void main(String[] args) {
 
         double accountBalance = 1;
 
         Urun urun = new Urun();
-        // System.out.println(urun.toString());
+       // System.out.println(urun.toString());
         Options options = new Options();
         //options.select(urun);
 
@@ -16,4 +17,3 @@ public class Main {
 
     }
 }
-

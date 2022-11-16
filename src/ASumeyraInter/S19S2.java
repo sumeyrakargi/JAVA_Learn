@@ -4,16 +4,19 @@ public class S19S2 {
     public static void main(String[] args) {
         //Prime number
 
-        int sayi=73;
+
+        int sayi=15;
+        boolean sonuç=false;
         for (int i = 2; i < sayi; i++) {
-            boolean sonuç=true;
+
             if (sayi%i==0) {
                 sonuç = true;
-            }else sonuç=false;
+                break;
+            }
 
-            }if (true) {
-            System.out.println(sayi + " sayısı asal sayı dağildir");
-        }else System.out.println(sayi+ " sayısı asal sayıdır.");
+            }if (!sonuç) {
+            System.out.println(sayi + " sayısı asal sayı dır");
+        }else System.out.println(sayi+ " sayısı asal sayı değildir.");
         }
 }
 

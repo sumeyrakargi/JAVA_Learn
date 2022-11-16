@@ -13,5 +13,8 @@ public class S12 {
         if (sayi%2==0) {
             System.out.println(sayi + " çift sayıdır.");
         }else System.out.println(sayi+ " tek sayıdır.");
+
+
+
     }}
 

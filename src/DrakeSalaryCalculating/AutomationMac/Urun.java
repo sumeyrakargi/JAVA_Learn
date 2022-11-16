@@ -2,9 +2,7 @@ package DrakeSalaryCalculating.AutomationMac;
 
 public class Urun {
 
-
-
-    /*
+/*
 kraker=2.5;
 cips=2.2;
 cocaCola=2.2;
@@ -110,4 +108,5 @@ price;
                 ",\ncay=₺" + cay +
                 ",\nfiltreKahve=₺" + filtreKahve
                 ;
-}}
+    }
+}

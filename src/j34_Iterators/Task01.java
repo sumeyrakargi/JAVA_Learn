@@ -26,5 +26,5 @@ public class Task01 {
         } else list2.remove();
         }while (list2.hasPrevious()){
             System.out.print(list2.previous() + " ");
-        }
-}}
+        }}
+}

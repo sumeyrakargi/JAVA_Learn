@@ -1,4 +1,4 @@
-package bstudentchallange;
+package bstudentchallange.gamze;
 
 public class Gamze {
 

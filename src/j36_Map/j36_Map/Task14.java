@@ -14,7 +14,8 @@ public class Task14 {
 		map1.put(101, "Ali, Can, java");
 		map1.put(102, "Veli, Yan, java");
 		map1.put(103, "Ali, Yan, C#");
-				
+
+
 		String istenenDil="JAVA";
 		
 		List<String> isimList = javaBilenler(map1,istenenDil);

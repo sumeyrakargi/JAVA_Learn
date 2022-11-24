@@ -16,5 +16,5 @@ public class C01_AtamaOperatoru {
         System.out.println("yas="+yas);//33
         System.out.println(yas+=11);//44 atama yapıldığı için artık yaş 44
 
-            }
-}
+        System.out.println(yas == 44);//true
+    }}

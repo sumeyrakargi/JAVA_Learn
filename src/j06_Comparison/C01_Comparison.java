@@ -24,11 +24,11 @@ public class C01_Comparison {
 
         String s1="kerem bey";
         String s2="Kerem bey";
-        System.out.println(s1==s2);//true
+        String s3="kerem bey";
+        System.out.println(s1==s2);//false
 
-
-
-
+        System.out.println(s1.equals(s3));//true
+        System.out.println(s1 == s3);//true
 
 
     }

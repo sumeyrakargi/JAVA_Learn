@@ -9,7 +9,7 @@ public class C01 {
         Array (Dizi): Java'da birden fazla variable store etmek icin kullanilan objelerden biridir
         Array olusturulurken 2 seyi declare etmeliyiz:
         1- data type (Bir array'in icerisinde sadece ayni data tipinden elemanlar olmalıdır.)
-        2- uzunluk (uzunluk array'in icerisne konul max eleman sayisini belirtir ve bundan fazlasini koymak istersek RTE verir)
+        2- uzunluk (uzunluk array'in icerisne konulan max eleman sayisini belirtir ve bundan fazlasini koymak istersek RTE verir)
         array= tepsiye benzer..
         Array'de primitive datalar veya non-primitive datalarin referanslari store edilebilir
          isimler array'inin icinde isim degerleri degil, isimlerin referanslari saklanır
@@ -36,7 +36,7 @@ public class C01 {
         // Array eleman sayısı boyut değeri...
 
         System.out.println("sayıArr.length = " + sayıArr.length);//5
-
+        System.out.println(Arrays.toString(sayıArr));
 
         // Array son elemanı ...
         System.out.println("array son elemanı :" + isimArr[isimArr.length - 1]);//özge

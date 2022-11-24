@@ -44,7 +44,7 @@ public class Task04 {
         }
         System.out.println(kelimelist);
         for (String c : kelimelist.keySet()) {//key
-            System.out.print(c + " : " + kelimelist.get(c) + " ");
+            System.out.println(c + " : " + kelimelist.get(c) + " ");
+        }}//{java=2, geçme=1, deyip=1}
 
-        }
-}}
+}

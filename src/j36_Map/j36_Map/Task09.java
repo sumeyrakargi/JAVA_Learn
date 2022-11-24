@@ -17,7 +17,6 @@ public class Task09 {
 
     public static void main(String[] args) {
 
-
         Map<String, Integer> hm = new HashMap<>();
 
         hm.put("Kiraz", 100);

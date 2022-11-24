@@ -10,7 +10,7 @@ public class C03_Arrays {
 
         //task--> string ifadeyi kelime sayısını print eden code create ediniz.
 
-        String strArr[]=str.split(" ");//str her " " karaktere göre parçalanır.Her bir parça strArrin elemanı oşarak atandı.
+        String strArr[]=str.split(" ");//str her " " karaktere göre parçalanır.Her bir parça strArrin elemanı olarak atandı.
         System.out.println(Arrays.toString(strArr));//[javaCAN'lara, selam, olsun., En, kısa, zamanda, bolcana, offer, sonrası, TUZLABALIK, :)]
 
         System.out.println(strArr.length);//11

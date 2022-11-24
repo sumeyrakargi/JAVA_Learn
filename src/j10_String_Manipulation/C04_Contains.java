@@ -10,7 +10,7 @@ public class C04_Contains {
         String içerisinde istenen stringin varkığını kontrol eder boolean return eder.
          */
 
-        String s1=" Yusuf Bey başarıkı bir Trader";
+        String s1=" Yusuf Bey başarılı bir Trader";
         System.out.println( s1.contains("Bey"));//true
         System.out.println( s1.contains("Y"));//true
         System.out.println(s1.contains("P"));//false

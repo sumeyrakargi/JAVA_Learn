@@ -34,7 +34,5 @@ public class C08_Equals_equalsIgnorecase {
        System.out.println(s3==s4);//false
        System.out.println(s3.equals(s4));//true
 
-
-
     }
 }

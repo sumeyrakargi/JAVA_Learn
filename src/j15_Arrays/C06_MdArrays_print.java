@@ -12,7 +12,9 @@ Java'da Çok Boyutlu Diziler varsayılan bir veri tipi olarak bulunmazlar ve mat
  formatındaki verileri tutmak için kullanılır. Diziler liste halinde veriler için uygunken,
  matrisler tablo şeklindeki veriler için uygundur. Oluşturulan tabloda bir değere ulaşmak istersek
  satır ve sütun sayısını girmemiz yeterli olacaktır.
-* TRICK :)İki boyutlu dizilerde tek boyutlu diziler gibi indis değeri 0'dan başlar.
+* TRICK :)İki boyutlu dizilerde tek boyutlu diziler gibi index
+
+ değeri 0'dan başlar.
 Dizide tutulacak veri tipleri aynı olmak zorundadır farklı veri tiplerini aynı matriste tutamayız.
 
        * 1- Ic Icice olusturulan  array'lerde   disardaki ana array'e outer--> kat array

@@ -11,6 +11,8 @@ public class C10_Sort_reverse {
         //Collections.reserve();--> verilen listin ters sıralamasını return eder,
 
         ArrayList<String> listşehir=new ArrayList<>(List.of("Münih","losAngles","Bursa","Londra","samsun","istanbul"));
+        Collections.reverse(listşehir);
+        System.out.println("listşehir = " + listşehir);
 
         System.out.println(listşehir);//[Münih, losAngles, Bursa, Londra, samsun, istanbul]
         Collections.sort(listşehir);//-->sort() methor sout içinde çalışmaz

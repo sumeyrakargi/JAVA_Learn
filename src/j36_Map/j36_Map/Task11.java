@@ -34,8 +34,6 @@ public class Task11 {
             }else {
                 myMap.put(arr[i], 1);
             }
-        }
-
-        return myMap;
+        }return myMap;
     }
 }

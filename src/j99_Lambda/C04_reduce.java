@@ -20,8 +20,28 @@ public class C04_reduce {
         List<Integer> sayi = new ArrayList<>(Arrays.asList(24, 38, 49, 33, 7, 3, 42, 66, 75, 45, 46, 55, 35, 25, 67, 16));
         //  List<Integer> sayi = new ArrayList<>(Arrays.asList(1, 3, 5));//filter olarak cift  sartı null verecegi için optional class ataması yapar
         //Lambda ->Stream API
+        List<Integer> sayi2 = new ArrayList<>(Arrays.asList(1, 3, 5,7,8));
+
         System.out.println("\n   ***   ");
         ciftKareMaxPrint(sayi);//Optional[4356]
+        System.out.println("\n   ***   ");
+        elemantopla( sayi);//Optional[626]
+        System.out.println("\n   ***   ");
+        ciftElCarpPrint(sayi2);
+        System.out.println("\n   ***   ");
+        minBul( sayi);
+
+        sayi.stream().reduce(0,(a,b)->a+b);//Lambda expression-->626
+
+        /*
+        a : ilk değerini her zaman atanan identity değerden alır
+        b :  değerini her zaman stream akıştan alır
+        a ilk değerden sonraki değerlerini action body (işlem body) den alır.
+         */
+
+
+
+
     }//main sonu
 
     // Task : List'in cift elemanlarin karelerinin en buyugunu print ediniz.
@@ -40,6 +60,39 @@ public class C04_reduce {
                         reduce(Integer::max));//specific class daha hızlı çalışır
 
     }
+    public static void elemantopla(List<Integer> sayi) {
+
+        Optional<Integer>toplam=
+        sayi.stream().reduce(Integer::sum);
+        System.out.println(toplam);
+    }
+
+    // Task : List'teki cift elemanlarin carpimini  yazdiriniz.
+    public static void ciftElCarpPrint(List<Integer> sayi){
+        System.out.println(sayi.
+                stream().
+                filter(C01_LambdaEXpression::ciftMi).
+                reduce(Math::multiplyExact));//math Class'dam meth refere..
+        System.out.println(sayi.
+                stream().
+                filter(C01_LambdaEXpression::ciftMi).
+                reduce(1, (t, u) -> t * u));//Lamb. exp..
+    }
+// Task : List'teki elemanlardan en kucugunu 4 farklı yontem ile print ediniz.
+
+    public static void minBul(List<Integer> sayi){
+        System.out.println(sayi.stream().reduce(Math::min));//1. yol-> meth refe.
+        System.out.println(sayi.stream().reduce(Integer::min));//2. yol-> meth refe.
+        System.out.println(sayi.stream().reduce(C04_reduce::byHalukMinBul));//3. yol-> meth refe.
+        System.out.println(sayi.stream().reduce(Integer.MAX_VALUE,(a,b) -> a<b? a : b));
+
+    }
+    public  static  int byHalukMinBul(int a,int b){//meth refe için seed(tohum) meth
+        return a<b?a:b;
+    }
+//Task : Listteki 24 ten büyük en küçük tek sayıyı prin edin
+
+
 
 
 }

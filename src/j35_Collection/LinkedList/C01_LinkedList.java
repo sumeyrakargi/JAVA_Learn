@@ -1,9 +1,6 @@
 package j35_Collection.LinkedList;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class C01_LinkedList {
     public static void main(String[] args) {
@@ -21,6 +18,7 @@ public class C01_LinkedList {
          */
 
         LinkedList<String>ll1=new LinkedList<>(Arrays.asList("Sumeyra","umut","Murat","Adem","Busra","Ismail"));
+
         //LinkedList print..
         System.out.println("ll1 = " + ll1);
         //LinkedList print..
@@ -39,5 +37,9 @@ public class C01_LinkedList {
         System.out.println("ll1 = " + ll1);
         ll1.addAll(3, ll2);
         System.out.println("ll1 = " + ll1);
+        System.out.println(ll1.get(5));
+        Collections.sort(ll1);
+        System.out.println(ll1);
+
     }
 }

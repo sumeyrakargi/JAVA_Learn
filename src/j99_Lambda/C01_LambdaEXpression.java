@@ -53,7 +53,6 @@ public class C01_LambdaEXpression {
 
         printElStructured(sayi);//24 38 49 33 7 3 42 66 75 45 46 55 35 25 67 16
         System.out.println("\n   ***   ");
-
         printElFunctional(sayi);//24 38 49 33 7 3 42 66 75 45 46 55 35 25 67 16
         System.out.println("\n   ***   ");
 

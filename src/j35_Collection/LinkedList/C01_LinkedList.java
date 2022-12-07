@@ -22,7 +22,7 @@ public class C01_LinkedList {
         //LinkedList print..
         System.out.println("ll1 = " + ll1);
         //LinkedList print..
-        ll1.add("Yusuf");
+        ll1.add("Umit");
         System.out.println("ll1 = " + ll1);
         ll1.add(2,"Bera");
         System.out.println("ll1 = " + ll1);

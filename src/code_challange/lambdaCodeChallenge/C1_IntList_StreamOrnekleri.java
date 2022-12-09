@@ -1,9 +1,6 @@
 package code_challange.lambdaCodeChallenge;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class C1_IntList_StreamOrnekleri {
@@ -21,9 +18,47 @@ public class C1_IntList_StreamOrnekleri {
         System.out.println(son5basDegil(list));
         System.out.println("topla(list) = " + topla(list));
         System.out.println("negatifKareList(list) = " + negatifKareList(list));
+        bestenbuyuk(list);
+        sıfırdankucukmu(list);
+        yuzeesiteleman(list);
+        sıfıraesit(list);
+        ilkbestopla(list);
+        sonbeseleman(list);
+
+    }
+    // S17: listenin son bes elemaninin  listele -skip long
+    private static void sonbeseleman(List<Integer> list) {
+        list.stream().skip(7).forEach(x-> System.out.print(x+" "));
+
     }
 
+    // S16:  listenin ilk 5 elemanini topla? - limit(5)
+    private static void ilkbestopla(List<Integer> list) {
+        System.out.println(list.stream().limit(5).reduce(0, (a, b) -> a + b));
+    }
 
+    // S15: listenin sifira esit elemani yok mu? - noneMatch
+    private static void sıfıraesit(List<Integer> list) {
+        System.out.println(list.stream().noneMatch(x -> x == 0));
+    }
+
+    // S14: listenin 100 e esit elemani yok mu ? -noneMatch
+    private static void yuzeesiteleman(List<Integer> list) {
+        System.out.println(list.stream().noneMatch(x -> x == 100));
+    }
+
+    // S13 : listenin tum elemanlari sifirdan kucuk mu? -allMatch
+
+    private static void sıfırdankucukmu(List<Integer> list) {
+        System.out.println(list.stream().allMatch(t -> t < 0));
+
+    }
+
+    // S12 : listeden 5 den buyuk  sayi var mi? -anyMatch
+    private static void bestenbuyuk(List<Integer> list) {
+        System.out.println(list.stream().anyMatch(x -> x > 5));
+
+    }
 
     // S10 :list elemanlarini toplamini bulalim
     private static int topla(List<Integer> list) {
@@ -43,18 +78,6 @@ public class C1_IntList_StreamOrnekleri {
     yerde hata ayıklamayı desteklemek için vardır . Ara islemdir.. yapilam islemi gormek icin kullanilir
 
      */
-    // S12 : listeden 5 den buyuk  sayi var mi? -anyMatch
-
-    // S13 : listenin tum elemanlari sifirdan kucuk mu? -allMatch
-
-    // S14: listenin 100 e esit elemani yok mu ? -noneMatch
-
-    // S15: listenin sifira esit elemani yok mu? - noneMatch
-
-    // S16:  listenin ilk 5 elemanini topla? - limit(5)
-
-    // S17: listenin son bes elemaninin  listele -skip long
-
 
 // S9: list pozitif elemanlari icn karelerini bulup birler basamagi 5 olmayanlardan yeni bir list olusturalim
 
@@ -108,14 +131,5 @@ public class C1_IntList_StreamOrnekleri {
         System.out.println();
         list.stream().forEach(x -> System.out.print(x + " "));
     }
-
-
-
-
-
-
-
-
-
 
 }

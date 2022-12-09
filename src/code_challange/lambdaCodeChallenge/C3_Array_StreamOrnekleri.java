@@ -14,18 +14,17 @@ public class C3_Array_StreamOrnekleri {
         //Array ler collection sinifinda degillerdir..set ve MAp ler gibi degildir..
         // kullanabilmek icin donusum yapilmalidir
 
-        Integer arr1 [] ={1,5,-5,6,12,-8,9,3,4};
+        Integer[] arr1 ={1,5,-5,6,12,-8,9,3,4};
 
 
-    }
+
     //S1: arrayin elemanlarini bir liste yazdiralim
+        Arrays.stream(arr1).collect(Collectors.toList()).forEach(x-> System.out.print(x+ " "));
+        System.out.println();
 
-
-    //S2: Arrayin elemanlarini toplamini bulalim
-
-
-    // S3: Array in elemanlarinin ortalamasini bulalim yazdir
-
-
-
-}
+     //S2: Arrayin elemanlarini toplamini bulalim
+        System.out.print(Arrays.stream(arr1).reduce(0, (t, u) -> t + u));
+        System.out.println();
+     // S3: Array in elemanlarinin ortalamasini bulalim yazdir
+        System.out.println(Arrays.stream(arr1).reduce(0, (t, u) -> t + u)/arr1.length);
+    }}

@@ -21,6 +21,13 @@ public class C3_MultiArrays_StreamOrnekleri {
 
         System.out.println("listele(arr) = " + listele(arr));
         doubleYaz(arr);
+
+        // S3: E ile baslayan elemanlari liste olarak yazdiralim
+        Arrays.stream(arr).flatMap(t->Arrays.stream(t)).filter(x->x.startsWith("E")).collect(Collectors.toList()).forEach(t-> System.out.println(t));
+        System.out.println();
+        //S4 : k ile bitenlerin sonuna '*' ekleyelim   ***endsWith("k")
+        Arrays.stream(arr).flatMap(Arrays::stream).filter(x->x.endsWith("k")).map(t->t+"*").forEach(t-> System.out.println(t));
+        System.out.println();
     }
 
     // S2: E ile baslayan elemanlari double (elmaelma) olarak yazdiralim
@@ -36,10 +43,6 @@ public class C3_MultiArrays_StreamOrnekleri {
         //hepsi bir streamde, bu method ile yeni bir streamde tek duzleme aliyoruz
     }
 
-    // S3: E ile baslayan elemanlari liste olarak yazdiralim
-
-
-    //S4 : k ile bitenlerin sonuna '*' ekleyelim   ***endsWith("k")
 
 
 }

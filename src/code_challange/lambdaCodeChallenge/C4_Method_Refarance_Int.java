@@ -30,6 +30,7 @@ public class C4_Method_Refarance_Int {
     // S1: tekleri aralarinda bir bosluk birakarak yazdiralim
 
 
+
     // S2: ciftlerin carpimini bulalim
 
 

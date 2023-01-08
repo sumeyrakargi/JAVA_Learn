@@ -1,4 +1,4 @@
-package Drake.AutomationMac;
+package some_projects.AutomationMac;
 
 public class Main {
 

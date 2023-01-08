@@ -1,4 +1,4 @@
-package Drake.SalaryCalculation;
+package some_projects.SalaryCalculation;
 
 public class Employee {
 

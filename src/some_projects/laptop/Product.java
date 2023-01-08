@@ -1,4 +1,4 @@
-package Drake.laptop;
+package some_projects.laptop;
 
 public abstract class Product {
 

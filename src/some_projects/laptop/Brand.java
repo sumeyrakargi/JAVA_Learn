@@ -1,4 +1,4 @@
-package Drake.laptop;
+package some_projects.laptop;
 
 import java.util.ArrayList;
 import java.util.List;

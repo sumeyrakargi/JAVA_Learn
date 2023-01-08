@@ -1,6 +1,7 @@
 package interwiev.day1;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Q01_CountsOfCharactersWithArray {
@@ -16,31 +17,26 @@ public class Q01_CountsOfCharactersWithArray {
         System.out.print("Bir string giriniz :");
         String str = scan.nextLine();
 
-        //split
-        String [] arr = str.split(""); //her bir karakteri ayirir
-        System.out.println(Arrays.toString(arr));
-
-        //sort()
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
-
-        //count :sayac olustur
-
-        int counter = 0;
-
-        //karakterleri karsilastirmak icin for loop
-
-        for (int i = 1; i < arr.length; i++) {
-            if(arr[i-1].equals(arr[i])){ //birden fazla sayidaki karakter icin
-                counter++;
-            }else{ //tek sayidaki karakter
-                System.out.println(arr[i-1] + " sayisi " + (counter+1));
-                counter =0;
-            }
-            if(i==arr.length-1){//en son karakter benzersiz ise calisir
-                System.out.println(arr[i] + " sayisi " + (counter+1)) ;
-            }
-        }
+        // //split
+       String [] arr = str.split(""); //her bir karakteri ayirir
+       System.out.println(Arrays.toString(arr));
+       //sort()
+       Arrays.sort(arr);
+       System.out.println(Arrays.toString(arr));
+       //count :sayac olustu
+       int counter = 0;
+       //karakterleri karsilastirmak icin for loo
+      for (int i = 1; i < arr.length; i++) {
+          if(arr[i-1].equals(arr[i])){ //birden fazla sayidaki karakter icin
+              counter++;
+          }else{ //tek sayidaki karakter
+              System.out.println(arr[i-1] + " sayisi " + (counter+1));
+              counter =0;
+          }
+          if(i==arr.length-1){//en son karakter benzersiz ise calisir
+              System.out.println(arr[i] + " sayisi " + (counter+1)) ;
+          }
+      }
 
     }
 

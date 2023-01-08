@@ -1,4 +1,4 @@
-package Drake.LaptopStore;
+package some_projects.LaptopStore;
 
 
 import java.util.ArrayList;

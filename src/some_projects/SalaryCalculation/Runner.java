@@ -1,10 +1,10 @@
-package Drake.SalaryCalculation;
+package some_projects.SalaryCalculation;
 
 public class Runner {
 
     public static void main(String[] args) {
 
-        Employee employee = new Employee("Drake",20000,41,2020);
+        Employee employee = new Employee("some_projects",20000,41,2020);
         System.out.println("Name: " + employee.name);
         System.out.println("Maas: " + employee.salary);
         System.out.println("Odenecek Vergi: " + employee.tax() + "₺");

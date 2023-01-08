@@ -1,4 +1,4 @@
-package Drake;
+package some_projects;
 
 public class Employee {
     String name;

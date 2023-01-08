@@ -1,4 +1,4 @@
-package Drake.EmailCreation;
+package some_projects.EmailCreation;
 
 public class Main {
 

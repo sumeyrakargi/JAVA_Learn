@@ -7,7 +7,7 @@ package j33_interface;
         public   void klima();// abs. meth
 
         static final String MUSIC="arizona kertenkele style :)underground";
-        //String  kumas ;//final variable initial edilmeli CTE
+        //final String  kumas ;//final variable initial edilmeli CTE
         String  KUMAS="kadife";
         String  RENK="ahsap";
 }
